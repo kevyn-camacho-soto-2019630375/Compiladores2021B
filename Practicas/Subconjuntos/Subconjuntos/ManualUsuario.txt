@@ -1,0 +1,28 @@
+
+Nombre: Kevyn Camacho Soto Materia: Compiladores Grupo: 3CV16 Escuela: ESCOM
+
+Practica de los subconjuntos
+Este programa regresa un AFD partiendo de un AFN.
+
+Entrada: AFN (Tengo 2 AFN para probar la practica AFN.txt y AFN2.txt)
+Salida: AFD
+
+Formato para el AFN
+El formato para ingresar el AFN se puede ver en el archivo "AFN.txt" o "AFN2.txt" pero la sintaxis
+es la siguiente "estado simbolo-transicion estado"
+Por ejemplo:    3 b 4       (3 = estado b = simbolo-transicion 4 = estado)
+El estado inicial se marca con un "+"
+Ejemplo:        1+ e 2      (siendo 1 el estado inicial)
+Y un estado de aceptacion (final) con un "-"
+Ejemplo:        2 a -3      (siendo 3 el estado de aceptacion)         
+Para indicar una transicion con epsilon usamos "e"
+Ejemplo:        1+ e -10    (siendo e epsilon)
+
+Formato de salida para el AFD
+La salida del AFD es similar al formato de entrada del AFN.
+Tendremos estados con la sintaxis "[estado] simbolo-transicion [estado]"
+Ejemplo:        [3 6 7 8 ] a [7 8 6 ]           ([3 6 7 8 ] = [estado] a = simbolo-transicion [7 8 6 ] = [estado])
+El estado inicial se marca con un "+"
+Ejemplo         [1 2 5 6 8 ]+ a [3 6 7 8 ]      ([1 2 5 6 8 ]+ = estado inicial)
+Y un estado de aceptacion (final) con un "-"
+Ejemplo:        [3 6 7 8 ] b -[4 9 10 ]         (-[4 9 10 ] = estado final)
