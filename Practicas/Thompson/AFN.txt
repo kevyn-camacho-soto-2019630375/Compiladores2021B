@@ -1,0 +1,6 @@
+expresion regular = (a|b)*
+AFN:
+7+ e 5 e 1 a 2 e 6
+5 e 3 b 4 e 6 e 8
+6 e 5
+7 e -8 
