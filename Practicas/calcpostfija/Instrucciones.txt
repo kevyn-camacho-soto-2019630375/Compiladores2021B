@@ -1,0 +1,11 @@
+Intrucciones para compilar y ejecutar los archivos:
+calculadora.l (analizador lexico)
+calculadora.y (analizador sintactico)
+--------------------------
+bison -d calculadora.y
+flex calculadora.l
+gcc -c lex.yy.c
+gcc -c calculadora.tab.c
+gcc calculadora.tab.o lex.yy.o -lfl
+./a.out
+
