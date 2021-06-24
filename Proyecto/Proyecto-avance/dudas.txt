@@ -1,0 +1,4 @@
+Despues de escribir dos identificadores seguidos me manda error
+Tendria que usar el yyval en el analizador lexico para que me reconociera el valor en el 
+analizador sintactico?
+
